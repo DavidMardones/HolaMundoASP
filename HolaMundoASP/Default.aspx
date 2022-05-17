@@ -12,10 +12,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1>Hola mundo mi web bakan en ASP</h1>
+            <h1 class="text-success" runat="server" id="mensajeH1">Hola mundo mi web bakan en ASP</h1>
         </div>
-        <div>
-            <asp:Button runat="server" ID="saludarBtn" Text="Saludar!!" />
+        <div class="form-group">
+            <asp:Button CssClass="btn btn-primary" OnClick="saludarBtn_Click" runat="server" ID="saludarBtn" Text="Saludar!!" />
         </div>
     </form>
     <!-- JavaScript Bundle with Popper -->
