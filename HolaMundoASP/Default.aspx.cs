@@ -13,5 +13,14 @@ namespace HolaMundoASP
         {
 
         }
+
+        protected void saludarBtn_Click(object sender, EventArgs e)
+        {
+            //Para los asp components, la propiedad para obtener valor es TEXT
+            string nombre = this.nombreTxt.Text.Trim();
+
+            //Para los HTML Elements, la propiedad es InnerText
+            this.mensajeH1.InnerText = "Hola "+nombre+", para de faltar a clases..";
+        }
     }
 }
